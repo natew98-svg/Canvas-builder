@@ -52,6 +52,19 @@ streamlit run app.py
 pytest -q
 ```
 
+## Deploy on Render
+
+1. Push this repo to GitHub (`natew98-svg/canvas-builder`).
+2. In Render, click `New` -> `Blueprint`.
+3. Connect your GitHub account and select this repo.
+4. Render will detect `render.yaml` and create the web service.
+5. Deploy.
+6. Open the generated Render URL and test the app.
+
+Notes:
+- Free plans may spin down when idle.
+- For Canvas API usage, only enter tokens over HTTPS and avoid sharing public links broadly.
+
 ## Import into Canvas
 
 1. Generate and download `canvas_course_template.imscc` from Step 5.
